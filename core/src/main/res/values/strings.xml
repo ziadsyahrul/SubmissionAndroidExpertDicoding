@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="image_detail">image detail</string>
+    <string name="title">Title</string>
+    <string name="date">Date</string>
+    <string name="image_list">Image List</string>
+</resources>

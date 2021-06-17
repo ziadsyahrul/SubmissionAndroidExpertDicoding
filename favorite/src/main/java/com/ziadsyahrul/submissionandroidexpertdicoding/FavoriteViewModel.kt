@@ -8,10 +8,7 @@ import com.ziadsyahrul.submissionandroidexpertdicoding.domain.usecase.CatalogApp
 
 class FavoriteViewModel(private val catalogUseCase: CatalogAppUseCase): ViewModel() {
 
-//    fun getMovieFavorite(): LiveData<List<Catalog>> = catalogUseCase.getFavMovie().asLiveData()
     val movieFavorite = catalogUseCase.getFavMovie().asLiveData()
-
-//    fun getTvFavorite(): LiveData<List<Catalog>> = catalogUseCase.getFavTvShow().asLiveData()
 
     val tvShowFavorite = catalogUseCase.getFavTvShow().asLiveData()
 

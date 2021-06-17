@@ -50,7 +50,7 @@ class FavoriteMovieFragment : Fragment() {
                 binding.tvNodata.visibility =
                     if (dataMovie.isNotEmpty()) View.GONE else View.VISIBLE
                 binding.progressBarMovieFavorite.visibility =
-                    if (dataMovie.isNotEmpty()) View.GONE else View.VISIBLE
+                    if (dataMovie.isNotEmpty()) View.GONE else View.GONE
             })
             with(binding.rvMovieFavorite) {
                 layoutManager = LinearLayoutManager(context)

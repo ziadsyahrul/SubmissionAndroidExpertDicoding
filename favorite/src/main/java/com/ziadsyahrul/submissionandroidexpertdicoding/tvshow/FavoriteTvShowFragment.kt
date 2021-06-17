@@ -51,7 +51,7 @@ class FavoriteTvShowFragment : Fragment() {
                 binding.tvNodata.visibility =
                     if (dataTvShow.isNotEmpty()) View.GONE else View.VISIBLE
                 binding.progressBarTvFavorite.visibility =
-                    if (dataTvShow.isNotEmpty()) View.GONE else View.VISIBLE
+                    if (dataTvShow.isNotEmpty()) View.GONE else View.GONE
             })
             with(binding.rvTvFavorite) {
                 layoutManager = LinearLayoutManager(context)

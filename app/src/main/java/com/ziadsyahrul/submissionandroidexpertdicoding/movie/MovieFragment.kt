@@ -18,8 +18,6 @@ import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.FlowPreview
 import org.koin.android.viewmodel.ext.android.viewModel
 
-@ExperimentalCoroutinesApi
-@FlowPreview
 class MovieFragment : Fragment() {
 
     private val movieViewModel: MovieViewModel by viewModel()

@@ -20,8 +20,6 @@ import kotlinx.coroutines.FlowPreview
 import org.koin.android.viewmodel.ext.android.viewModel
 import java.util.*
 
-@ExperimentalCoroutinesApi
-@FlowPreview
 class TvShowFragment : Fragment() {
 
     private val tvViewModel: TvShowViewModel by viewModel()

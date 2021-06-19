@@ -1,12 +1,10 @@
-package com.ziadsyahrul.submissionandroidexpertdicoding
+package com.ziadsyahrul.favorite
 
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
-import com.ziadsyahrul.submissionandroidexpertdicoding.domain.model.Catalog
 import com.ziadsyahrul.submissionandroidexpertdicoding.domain.usecase.CatalogAppUseCase
 
-class FavoriteViewModel(private val catalogUseCase: CatalogAppUseCase): ViewModel() {
+class FavoriteViewModel(catalogUseCase: CatalogAppUseCase): ViewModel() {
 
     val movieFavorite = catalogUseCase.getFavMovie().asLiveData()
 

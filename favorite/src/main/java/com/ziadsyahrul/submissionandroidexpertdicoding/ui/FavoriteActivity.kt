@@ -1,9 +1,9 @@
-package com.ziadsyahrul.submissionandroidexpertdicoding.ui
+package com.ziadsyahrul.favorite.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.ziadsyahrul.submissionandroidexpertdicoding.favorite.databinding.ActivityFavoriteBinding
-import com.ziadsyahrul.submissionandroidexpertdicoding.injection.favoriteModule
+import com.ziadsyahrul.favorite.databinding.ActivityFavoriteBinding
+import com.ziadsyahrul.favorite.injection.favoriteModule
 import org.koin.core.context.loadKoinModules
 
 class FavoriteActivity : AppCompatActivity() {

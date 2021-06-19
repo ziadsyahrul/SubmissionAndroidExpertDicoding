@@ -1,4 +1,4 @@
-package com.ziadsyahrul.submissionandroidexpertdicoding.tvshow
+package com.ziadsyahrul.favorite.tvshow
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,11 +7,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.ziadsyahrul.submissionandroidexpertdicoding.FavoriteViewModel
+import com.ziadsyahrul.favorite.FavoriteViewModel
+import com.ziadsyahrul.favorite.databinding.FragmentFavoriteTvShowBinding
 import com.ziadsyahrul.submissionandroidexpertdicoding.detail.DetailCatalogActivity
-import com.ziadsyahrul.submissionandroidexpertdicoding.favorite.R
-import com.ziadsyahrul.submissionandroidexpertdicoding.favorite.databinding.FragmentFavoriteTvShowBinding
-import com.ziadsyahrul.submissionandroidexpertdicoding.favorite.databinding.FragmentMovieFavoriteBinding
+
 import com.ziadsyahrul.submissionandroidexpertdicoding.ui.CatalogAdapter
 import org.koin.android.viewmodel.ext.android.viewModel
 

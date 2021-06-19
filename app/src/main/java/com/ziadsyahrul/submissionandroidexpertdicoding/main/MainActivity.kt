@@ -1,7 +1,6 @@
 package com.ziadsyahrul.submissionandroidexpertdicoding.main
 
 import android.content.Intent
-import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -33,7 +32,7 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             R.id.favorite_menu -> {
-                startActivity(Intent(this, Class.forName("com.ziadsyahrul.submissionandroidexpertdicoding.ui.FavoriteActivity")))
+                startActivity(Intent(this, Class.forName("com.ziadsyahrul.favorite.ui.FavoriteActivity")))
             }
         }
         return super.onOptionsItemSelected(item)

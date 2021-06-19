@@ -1,12 +1,12 @@
-package com.ziadsyahrul.submissionandroidexpertdicoding.ui
+package com.ziadsyahrul.favorite.ui
 
 import android.content.Context
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
+import com.ziadsyahrul.favorite.movie.FavoriteMovieFragment
+import com.ziadsyahrul.favorite.tvshow.FavoriteTvShowFragment
 import com.ziadsyahrul.submissionandroidexpertdicoding.R
-import com.ziadsyahrul.submissionandroidexpertdicoding.tvshow.FavoriteTvShowFragment
-import com.ziadsyahrul.submissionandroidexpertdicoding.movie.FavoriteMovieFragment
 
 class FavoritePagerAdapter(private val context: Context, fm: FragmentManager): FragmentPagerAdapter(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT){
 

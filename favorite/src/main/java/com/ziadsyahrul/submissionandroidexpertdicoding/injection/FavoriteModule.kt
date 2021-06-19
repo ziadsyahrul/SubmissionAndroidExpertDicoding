@@ -1,6 +1,6 @@
-package com.ziadsyahrul.submissionandroidexpertdicoding.injection
+package com.ziadsyahrul.favorite.injection
 
-import com.ziadsyahrul.submissionandroidexpertdicoding.FavoriteViewModel
+import com.ziadsyahrul.favorite.FavoriteViewModel
 import org.koin.android.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 

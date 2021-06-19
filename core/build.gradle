@@ -13,7 +13,7 @@ android {
 
     defaultConfig {
         buildConfigField("String", "API_KEY", '"07f21ca8526a5988e3a4202e8f3cff99"')
-        minSdkVersion 21
+        minSdkVersion 22
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"

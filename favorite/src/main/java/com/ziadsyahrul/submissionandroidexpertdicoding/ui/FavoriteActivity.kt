@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.ziadsyahrul.favorite.databinding.ActivityFavoriteBinding
 import com.ziadsyahrul.favorite.injection.favoriteModule
+import com.ziadsyahrul.favorite.ui.FavoritePagerAdapter
 import org.koin.core.context.loadKoinModules
 
 class FavoriteActivity : AppCompatActivity() {

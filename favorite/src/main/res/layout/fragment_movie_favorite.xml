@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ziadsyahrul.submissionandroidexpertdicoding.movie.FavoriteMovieFragment">
+    tools:context="com.ziadsyahrul.favorite.movie.FavoriteMovieFragment">
 
     <ProgressBar
         android:id="@+id/progressBarMovieFavorite"

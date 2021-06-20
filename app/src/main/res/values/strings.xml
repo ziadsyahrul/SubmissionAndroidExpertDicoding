@@ -2,11 +2,9 @@
     <string name="app_name">CatalogApp</string>
     <string name="title_favorite">Favorite</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="detail_date">Detail Date</string>
     <string name="detail_description">Detail Description</string>
     <string name="favorite_button">Favorite Button</string>
-    <string name="detail_title">Detail Title</string>
     <string name="movie">Movie</string>
     <string name="tv_show">Tv Show</string>
     <string name="wrong_text">Ada masalah sepertinya ....</string>

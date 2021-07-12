@@ -2,12 +2,10 @@ package com.ziadsyahrul.submissionandroidexpertdicoding.ui
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 import com.ziadsyahrul.submissionandroidexpertdicoding.core.databinding.ItemListBinding
 import com.ziadsyahrul.submissionandroidexpertdicoding.domain.model.Catalog
-import com.ziadsyahrul.submissionandroidexpertdicoding.utils.DiffUtils
 
 class CatalogAdapter: RecyclerView.Adapter<CatalogAdapter.CatalogViewHolder>() {
 

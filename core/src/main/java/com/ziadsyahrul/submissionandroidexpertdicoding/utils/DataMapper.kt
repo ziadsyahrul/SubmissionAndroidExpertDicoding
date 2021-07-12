@@ -27,16 +27,20 @@ object DataMapper {
     fun mapTvResponseToEntities(input: List<TvShowItem>): List<TvShowEntity>{
         val tvList = ArrayList<TvShowEntity>()
         input.map {
-            val tvshow = TvShowEntity(
-                it.id,
-                it.name,
-                it.overview,
-                it.firstAirDate,
-                it.posterPath,
-                isFavorite = false,
-                isTvShow = true
-            )
-            tvList.add(tvshow)
+            val tvshow = it.posterPath?.let { it1 ->
+                TvShowEntity(
+                    it.id,
+                    it.name,
+                    it.overview,
+                    it.firstAirDate,
+                    it1,
+                    isFavorite = false,
+                    isTvShow = true
+                )
+            }
+            if (tvshow != null) {
+                tvList.add(tvshow)
+            }
         }
         return tvList
     }

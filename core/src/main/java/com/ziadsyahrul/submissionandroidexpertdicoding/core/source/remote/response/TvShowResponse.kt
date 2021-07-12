@@ -24,7 +24,7 @@ data class TvShowItem(
 	val genreIds: List<Int>,
 
 	@field:SerializedName("poster_path")
-	val posterPath: String,
+	val posterPath: String?,
 
 	@field:SerializedName("origin_country")
 	val originCountry: List<String>,

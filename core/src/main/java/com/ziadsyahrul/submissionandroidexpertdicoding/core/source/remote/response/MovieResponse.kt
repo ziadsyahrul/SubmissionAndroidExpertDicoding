@@ -30,7 +30,7 @@ data class MovieItem(
 	val backdropPath: String,
 
 	@field:SerializedName("release_date")
-	val releaseDate: String,
+	val releaseDate: String?,
 
 	@field:SerializedName("popularity")
 	val popularity: Double,

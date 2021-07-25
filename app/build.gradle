@@ -53,6 +53,7 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.6'
+    implementation "com.airbnb.android:lottie:$lottie_version"
 
 
 }

@@ -10,16 +10,20 @@ object DataMapper {
     fun mapMovieResponseToEntities(input: List<MovieItem>): List<MovieEntity>{
         val movieList = ArrayList<MovieEntity>()
         input.map {
-            val movies = MovieEntity(
-                it.id,
-                it.title,
-                it.overview,
-                it.releaseDate,
-                it.posterPath,
-                isFavorite = false,
-                isTvShow = false
-            )
-            movieList.add(movies)
+            val movies = it.releaseDate?.let { it1 ->
+                MovieEntity(
+                    it.id,
+                    it.title,
+                    it.overview,
+                    it1,
+                    it.posterPath,
+                    isFavorite = false,
+                    isTvShow = false
+                )
+            }
+            if (movies != null) {
+                movieList.add(movies)
+            }
         }
         return movieList
     }

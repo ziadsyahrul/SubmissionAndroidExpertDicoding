@@ -53,9 +53,9 @@ class TvShowFragment : Fragment() {
                 startActivity(intent)
             }
 
-            tvViewModel.getTvShow().observe(viewLifecycleOwner, { tvShow ->
-                if (tvShow != null){
-                    when(tvShow){
+            tvViewModel.getTvShow().observe(viewLifecycleOwner) { tvShow ->
+                if (tvShow != null) {
+                    when (tvShow) {
                         is Resource.Loading -> binding.progressBarTvShow.visibility = View.VISIBLE
                         is Resource.Success -> {
                             binding.progressBarTvShow.visibility = View.GONE
@@ -64,11 +64,12 @@ class TvShowFragment : Fragment() {
                         is Resource.Error -> {
                             binding.progressBarTvShow.visibility = View.GONE
                             binding.viewErrorTv.root.visibility = View.VISIBLE
-                            binding.viewErrorTv.tvError.text = tvShow.message ?: getString(R.string.wrong_text)
+                            binding.viewErrorTv.tvError.text =
+                                tvShow.message ?: getString(R.string.wrong_text)
                         }
                     }
                 }
-            })
+            }
             with(binding.rvTv){
                 layoutManager = LinearLayoutManager(context)
                 setHasFixedSize(true)
